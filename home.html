@@ -27,12 +27,13 @@
       box-sizing: border-box;
     }
     body {
+      max-width: 100%;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       position: relative;
-      top: 100px;
       background: var(--var-Cream);
     }
 
@@ -130,7 +131,6 @@
     .attribution {
       display: block;
       position: absolute;
-      top: 100%;
       bottom: 0;
       font-size: 11px;
     }
@@ -138,10 +138,6 @@
       color: hsl(228, 45%, 44%); 
     }
     @media screen and (max-device-width: 675px){
-      body{
-        max-width: 100%;
-        min-height: 100vh;
-      }
       main{
         flex-direction: column;
         justify-content: center;
